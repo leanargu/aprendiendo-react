@@ -12,6 +12,24 @@ const App = () => {
     const clickHandlerFunction = text => {
         console.log(text)
     }
+
+    const onClickOperationFunction = operation => {
+        console.log("operation:", operation)
+    }
+
+    const onClickEqualFunction = equal => {
+        console.log("Equal:", equal)
+    }
+
+    const onContentClearFunction = clear => {
+        console.log("clear:", clear)
+    }
+
+    const onDeleteFunction = del => {
+        console.log("delete:", del)
+    }
+
+
     //Lo que ejecuta la función
     return (
         <main className="react-calculator">
@@ -28,22 +46,8 @@ const App = () => {
                 <Button text="9" clickHandler={clickHandlerFunction} />
                 <Button text="0" clickHandler={clickHandlerFunction} />
             </div>
-            <Functions
-                onContentClear={clear =>
-                    console.log("clear:", clear)
-                }
-                onDelete = {del =>
-                    console.log("delete:", del)
-                }
-            />
-            <MathOperations
-                onClickOperation={operation =>
-                    console.log("operation:", operation)
-                }
-                onClickEqual={equal =>
-                    console.log("Equal:",equal)
-                }
-            />
+            <Functions onContentClear={onContentClearFunction} onDelete={onDeleteFunction} />
+            < MathOperations onClickOperation={onClickOperationFunction} onClickEqual={onClickEqualFunction} />
         </main>)
 }
 

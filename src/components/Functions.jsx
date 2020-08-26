@@ -3,15 +3,15 @@ import PropTypes from 'prop-types'
 import Button from './Button'
 
 const Functions = ({onContentClear, onDelete}) => (
-    <section className="math-operations">
-        <Button text="clear" clickHandler={onContentClear} />
-        <Button text="remove" clickHandler={onDelete} />
+    <section className="functions">
+        <Button text="clear" type="button-long-text" clickHandler={onContentClear} />
+        <Button text="&larr;" clickHandler={onDelete} />
     </section>
 )
 
-MathOperations.propTypes = {
+Functions.propTypes = {
     onContentClear: PropTypes.func.isRequired,
     onDelete: PropTypes.func.isRequired
 }
 
-export default MathOperations
+export default Functions
