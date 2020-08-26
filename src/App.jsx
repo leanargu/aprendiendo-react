@@ -3,6 +3,7 @@ import React from 'react'
 import Button from './components/Button'
 import MathOperations from './components/MathOperations'
 import Result from './components/Result'
+import Functions from './components/Functions'
 import './App.css'
 
 //generación de la función del componente
@@ -27,10 +28,14 @@ const App = () => {
                 <Button text="9" clickHandler={clickHandlerFunction} />
                 <Button text="0" clickHandler={clickHandlerFunction} />
             </div>
-            <div className="functions">
-                <button>clear</button>
-                <button>remove</button>
-            </div>
+            <Functions
+                onContentClear={clear =>
+                    console.log("clear:", clear)
+                }
+                onDelete = {del =>
+                    console.log("delete:", del)
+                }
+            />
             <MathOperations
                 onClickOperation={operation =>
                     console.log("operation:", operation)
