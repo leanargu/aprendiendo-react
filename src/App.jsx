@@ -31,7 +31,14 @@ const App = () => {
                 <button>clear</button>
                 <button>remove</button>
             </div>
-            <MathOperations/>
+            <MathOperations
+                onClickOperation={operation =>
+                    console.log("operation:", operation)
+                }
+                onClickEqual={equal =>
+                    console.log("Equal:",equal)
+                }
+            />
         </main>)
 }
 
