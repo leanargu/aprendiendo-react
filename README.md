@@ -6,6 +6,7 @@ La aplicación es una calculadora creada en React con el objetivo de aprender so
 Para correr la aplicación se debe ejecutar el comando **npm start** desde una consola en la carpeta raíz del proyecto.
 
 ##Necesario para correr la aplicación
+
 Node:
 https://nodejs.org/dist/v12.18.3/node-v12.18.3-x64.msi
 
