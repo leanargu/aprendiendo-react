@@ -1,18 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Button from './Button'
+import { render } from '@testing-library/react';
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
 const renderButtons = onClickNumber => {
-    var numbers = [1, 5, 10, 15];
-    var doubles = numbers.map(number => {
-        <Button text="number.toString()" clickHandler={onClickNumber} />
-    });
+    return numbers.map(number => <Button text={number.toString()} clickHandler={onClickNumber} />)
 }
 
 
 const Numbers = ({ onClickNumber }) => (
     <section className="numbers">
-        
+        {
+            renderButtons(onClickNumber)
+        }
     </section>
 )
 
