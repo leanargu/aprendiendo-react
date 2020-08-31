@@ -3,7 +3,7 @@
 La aplicación es una calculadora creada en React con el objetivo de aprender sobre el Framework.
 
 # ¿Cómo correr la aplicación?
-Para correr la aplicación se debe ejecutar el comando **npm start** desde una consola en la carpeta raíz del proyecto.
+Para correr la aplicación se debe ejecutar el comando **npm install** y luego **npm start** desde una consola en la carpeta raíz del proyecto.
 
 ## Necesario para correr la aplicación
 
