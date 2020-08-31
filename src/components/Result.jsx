@@ -15,7 +15,7 @@ Result.propTypes = {
 }
 
 Result.defaultProps = {
-    value: "Error"
+    value: "0"
 }
 
 export default Result
